@@ -21,4 +21,5 @@ public class MainReflection {
         Object result = method.invoke(r);
         System.out.println(result);
     }
+
 }
