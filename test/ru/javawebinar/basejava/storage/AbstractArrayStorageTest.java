@@ -13,6 +13,13 @@ public abstract class AbstractArrayStorageTest {
     private static final String UUID_2 = "uuid2";
     private static final String UUID_3 = "uuid3";
 
+    public AbstractArrayStorageTest(Object o) {
+    }
+
+    public AbstractArrayStorageTest(Storage storage) {
+        this.storage = storage;
+    }
+
     @Before
     public void setUp() throws Exception {
         storage.clear();
@@ -60,4 +67,7 @@ public abstract class AbstractArrayStorageTest {
     public void getNotExist() throws Exception {
         storage.get("dummy");
     }
+
+
+
 }
