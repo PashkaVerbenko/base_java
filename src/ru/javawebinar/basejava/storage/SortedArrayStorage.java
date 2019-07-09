@@ -54,6 +54,7 @@ public class SortedArrayStorage extends AbstractArrayStorage {
         return Arrays.copyOfRange(storage, 0, size);
     }
 
+
     @Override
     protected int getIndex(String uuid) {
         Resume searchKey = new Resume();
